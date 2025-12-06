@@ -1,4 +1,4 @@
-def solve_day_four_part_one():
+def solve_day_five_part_one():
     f = open("inputs/day-five-input.txt", "r")
 
     numFresh = 0
@@ -25,4 +25,4 @@ def solve_day_four_part_one():
 
     return numFresh
 
-print(solve_day_four_part_one())
+print(solve_day_five_part_one())
