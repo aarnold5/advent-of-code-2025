@@ -1,6 +1,6 @@
 import math
 
-# need to create ranges. Should look at index of each operator to tell what is what.
+
 def solve_day_six_part_two():
     f = open("inputs/day-six-input.txt", "r")
 
