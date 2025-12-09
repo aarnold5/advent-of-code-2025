@@ -1,7 +1,7 @@
 import math
 
 
-def solve_day_seven_part_one(numShortestDistances):
+def solve_day_eight_part_one(numShortestDistances):
     f = open("inputs/day-eight-input.txt", "r")
 
     junctionBoxes = []
@@ -104,4 +104,4 @@ def solve_day_seven_part_one(numShortestDistances):
         
     return math.prod(sortedCircutSize[:3])
 
-print(solve_day_seven_part_one(1000))
+print(solve_day_eight_part_one(1000))
