@@ -90,12 +90,15 @@ def solve_day_eight_part_one(numShortestDistances):
                     
                     if foundCombo == True:
                         break
+
+                if foundCombo == True:
+                    break
         
-        print("Combine", toCombine)
         for combo in toCombine:
-            circuts[combo[0]] = circuts[combo[0]].union(circuts[combo[1]])
-            if circuts[combo[1]]:
-                circuts[combo[1]].pop()  
+            if (combo[0] in circuts and combo[1] in circuts):
+                circuts[combo[0]] = circuts[combo[0]].union(circuts[combo[1]])
+                circuts.pop(combo[1])
+                groupNums.remove(combo[1])
 
     lengths = []
     for c in circuts:
